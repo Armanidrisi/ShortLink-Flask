@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %} ShortLink - About{% endblock %}
+
+{% block body %}
+<div class="container my-5" style="min-height:80vh;">
+		<h1 class="text-center mb-5">About Us</h1>
+
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<p>We are a team of developers who are passionate about creating simple yet powerful tools to make the internet a better place. Our goal is to make URL shortening easy and accessible to everyone.</p>
+
+				<p>Our URL shortener service allows you to shorten any long and complex URLs into a short and easy-to-remember link. Simply copy and paste the long URL into our URL shortener, and we'll generate a short link that you can use anywhere on the web.</p>
+
+				<p>Our service is completely free to use and does not require any registration or sign-up. We believe in making the web a more open and accessible place, and our URL shortener is just one way that we're working to achieve that goal.</p>
+			</div>
+		</div>
+
+    <h2 class="mb-3">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is a URL shortener?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                    A URL shortener is a tool that takes a long URL and creates a shorter, more manageable link that redirects to the original URL.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How does a URL shortener work?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                    A URL shortener works by taking a long URL and generating a shorter link that redirects to the original URL. When someone clicks on the shorter link, they are redirected to the original URL.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Are URL shorteners safe to use?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    URL shorteners are generally safe to use, but it's important to be cautious and only click on links from sources you trust. Some URL shorteners can be used to hide malicious links or phishing scams, so always be careful when clicking on links.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

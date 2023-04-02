@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block title %} ShortLink - Home{% endblock %}
+
+{% block body %}
+<div class="container mt-5" style="min-height:80vh;">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          <h4>Enter URL to shorten</h4>
+        </div>
+        <div class="card-body">
+          <form id="urlShortenerForm" method="post" action="/">
+            <div class="form-group">
+              <label for="urlInput" class="form-label ">Enter URL</label>
+              <input
+                type="url"
+                class="form-control"
+                id="urlInput"
+                placeholder="https://www.example.com"
+                name="url"
+              />
+            </div>
+            <button type="submit" class="btn btn-dark">Shorten URL</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="features" class="my-4 ">
+    <h3 class="text-center">Features</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-lg">
+          <div class="card-body text-center">
+            <i class="fas fa-mouse-pointer fa-3x mb-3 text-primary"></i>
+            <h4 class="card-title">Easy to Use</h4>
+            <p class="card-text text-secondary">Our URL shortener is incredibly easy to use. Simply enter your long URL and click "Shorten URL" to get a short URL that you can share with others.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-lg">
+          <div class="card-body text-center">
+            <i class="fas fa-headphones fa-3x mb-3 text-warning"></i>
+            <h4 class="card-title">Customer Support</h4>
+            <p class="card-text text-secondary">A Dedicated support team is ready to help with any questions you may have. We provide 24x7 Live Call Support.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="sponsor" class="my-4">
+  <h3 class="text-center mb-2">Our Sponsors</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-4 col-md-2 mb-2">
+      <img src="https://i0.wp.com/shareus.io/wp-content/uploads/2022/07/Theprint-shareus.png?w=313&ssl=1" class="img-fluid">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-2">
+      <img src="https://i0.wp.com/shareus.io/wp-content/uploads/2022/07/shareus-review.png?w=400&ssl=1" class="img-fluid">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-2">
+      <img src="https://i0.wp.com/shareus.io/wp-content/uploads/2022/06/live-hindustan.png?w=280&ssl=1" class="img-fluid">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-2">
+      <img src="https://i0.wp.com/shareus.io/wp-content/uploads/2022/07/Zee5-news-shareus.png?w=313&ssl=1" class="img-fluid">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-2">
+      <img src="https://i0.wp.com/shareus.io/wp-content/uploads/2022/07/ANI-News.png?w=313&ssl=1" class="img-fluid">
+    </div>
+    <div class="col-6 col-sm-4 col-md-2 mb-2">
+      <img src="https://i0.wp.com/shareus.io/wp-content/uploads/2022/07/Latestly.png?w=264&ssl=1" class="img-fluid">
+    </div>
+  </div>
+</div>
+</section>
+<div class="faqAccordion my-4">
+
+    <h2 class="mb-3">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is a URL shortener?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                    A URL shortener is a tool that takes a long URL and creates a shorter, more manageable link that redirects to the original URL.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How does a URL shortener work?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                    A URL shortener works by taking a long URL and generating a shorter link that redirects to the original URL. When someone clicks on the shorter link, they are redirected to the original URL.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Are URL shorteners safe to use?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    URL shorteners are generally safe to use, but it's important to be cautious and only click on links from sources you trust. Some URL shorteners can be used to hide malicious links or phishing scams, so always be careful when clicking on links.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What are the benefits of using short links?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                <div class="card-body">
+                    There are several advantages to using short links, making them an essential tool for online marketing and communication:
+
+1. Improved readability and aesthetics: Short links look cleaner and are easier to share in social media, emails, and other online platforms. They make your content appear more organized and professional.
+2. Increased click-through rate (CTR): Short, branded links are more enticing to click on, as they appear more trustworthy and relevant to the user.
+3. Enhanced tracking and analytics: Short links often come with built-in tracking features that allow you to monitor clicks, geographic data, and other engagement metrics, helping you optimize your marketing efforts.
+4. Customization and branding: Short links can include your brand name or a custom alias, making them easily recognizable and memorable, which strengthens your brand identity.
+5. Space-saving: Short links save space in character-limited platforms, such as Twitter, allowing you to convey more information within the allowed character count.
+6. Better management: By using a URL shortener, you can better manage and organize your links, making it easier to update or modify them as needed.
+
+By including short links in your marketing and communication strategies, you can enjoy these benefits and improve your online visibility.
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+{% endblock %}

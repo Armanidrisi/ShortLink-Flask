@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+.env
+
+# Logs and other generated files
+*.log
+*.pot
+*.pyc
+*.swp
+
+# Dependency directories
+venv/
+env/
+env.bak/
+
+# Project specific directories
+uploads/
+static/
