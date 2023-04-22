@@ -10,6 +10,10 @@
 
 This is a Short Link Maker App created using Python Flask and SQLite3. The app allows users to create shortened links for long URLs and use them in their projects.
 
+## Preview:
+
+![preview](https://i.ibb.co/XpJ8hJb/6443cddc7105585c2735be70.jpg)
+
 ## 🔍 About the project
 
 The Short Link Maker App is a web application created using Python Flask and SQLite3. The app allows users to create shortened links for long URLs and use them in their projects. The app stores the original URLs and their shortened versions in a SQLite3 database, which can be queried to retrieve the original URLs.
